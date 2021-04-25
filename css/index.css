@@ -1,0 +1,181 @@
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v3/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfMZg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v3/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuI6fMZg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v3/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuGKYMZg.ttf) format('truetype');
+}
+* {
+  font-family: "Inter", "Verdana", sans-serif;
+}
+h1 {
+  margin: 0;
+  font-size: 96px;
+  font-weight: 600;
+  line-height: 112px;
+  letter-spacing: 0px;
+}
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+h6 {
+  color: #758899;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+p {
+  color: #fff;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+}
+html,
+body {
+  background-color: #000;
+}
+#avatar {
+  margin-top: 48px;
+  margin-bottom: 96px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (max-width: 767px) {
+  #avatar {
+    margin-top: 24px;
+    margin-bottom: 48px;
+  }
+}
+#avatar .align {
+  display: flex;
+  align-items: center;
+}
+#avatar .align .avatar {
+  width: 76px;
+  margin-right: 24px;
+  border-radius: 50%;
+  background: linear-gradient(264deg, #32c5ff 0%, #b620e0 50%, #f7b500 100%);
+  padding: 2px;
+}
+#avatar .align .avatar img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+#hero {
+  margin-bottom: 160px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (max-width: 767px) {
+  #hero {
+    margin-bottom: 80px;
+  }
+}
+#hero h1 {
+  color: #fff;
+}
+#card {
+  margin-bottom: 96px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (max-width: 767px) {
+  #card {
+    margin-bottom: 48px;
+  }
+}
+#card .card {
+  padding: 32px 24px;
+  margin-bottom: 24px;
+  border-radius: 16px;
+  background-color: rgba(70, 90, 107, 0.24);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+#card .card:hover {
+  background-color: rgba(70, 90, 107, 0.36);
+}
+#card .card h6 {
+  margin-bottom: 16px;
+}
+#card .card a.mail {
+  color: #fff;
+}
+#card .card a.mail:hover {
+  background: #f7b500;
+  background: linear-gradient(264deg, #32c5ff 0%, #b620e0 50%, #f7b500 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#card .card ul li a {
+  color: #fff;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+}
+#card .card ul li a:hover {
+  background: #f7b500;
+  background: linear-gradient(264deg, #32c5ff 0%, #b620e0 50%, #f7b500 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#sayhello {
+  position: relative;
+  width: 100%;
+}
+#sayhello a {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 140px;
+  overflow: hidden;
+  align-items: center;
+  background: #f7b500;
+  background: linear-gradient(264deg, #32c5ff 0%, #b620e0 50%, #f7b500 100%);
+}
+#sayhello a ul {
+  padding-left: 0;
+  display: flex;
+  list-style-type: none;
+  animation: hello 16s linear infinite;
+  position: absolute;
+}
+#sayhello a ul li {
+  margin: 0 8px;
+  white-space: nowrap;
+  color: #fff;
+  font-size: 46px;
+  font-weight: 600;
+  line-height: 46px;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+}
+#sayhello a:hover ul li {
+  text-decoration: underline;
+}
+@keyframes hello {
+  0% {
+    left: 100%;
+    transform: translateX(0%);
+  }
+  100% {
+    left: 0;
+    transform: translateX(-100%);
+  }
+}

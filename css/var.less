@@ -1,0 +1,69 @@
+@white: #fff;
+@black: #000;
+@grey1: #465a6b;
+@grey2: #758899;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+@mobile: ~"only screen and (max-width: 767px)";
+@tablet: ~"only screen and (min-width: 768px) and (max-width: 991px)";
+@laptop: ~"only screen and (min-width: 992px) and (max-width: 1200px)";
+@desktop: ~"only screen and (min-width: 1201px)";
+.animation(@value) {
+  -webkit-animation: @value;
+  -moz-animation: @value;
+  -o-animation: @value;
+  -ms-animation: @value;
+  animation: @value;
+}
+
+.transition(@value) {
+  -webkit-transition: @value;
+  transition: @value;
+}
+
+.transition-delay(@value) {
+  -webkit-transition-delay: @value;
+  -moz-transition-delay: @value;
+  -ms-transition-delay: @value;
+  -o-transition-delay: @value;
+  transition-delay: @value;
+}
+
+.transform(@value) {
+  -webkit-transform: @value;
+  -moz-transform: @value;
+  -o-transform: @value;
+  -ms-transform: @value;
+  transform: @value;
+}
+
+* {
+  font-family: "Inter", "Verdana", sans-serif;
+}
+
+h1 {
+  margin: 0;
+  font-size: 96px;
+  font-weight: 600;
+  line-height: 112px;
+  letter-spacing: 0px;
+  @media @mobile {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+
+h6 {
+  color: @grey2;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+p {
+  color: @white;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+}
