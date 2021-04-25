@@ -13,6 +13,10 @@ body {
   .align {
     display: flex;
     align-items: center;
+    @media @mobile {
+      flex-direction: column;
+      text-align: center;
+    }
     .avatar {
       width: 76px;
       margin-right: 24px;
@@ -24,11 +28,23 @@ body {
         rgba(247, 181, 0, 1) 100%
       );
       padding: 2px;
+      @media @mobile {
+        margin-right: 0;
+        margin-bottom: 16px;
+        width: 120px;
+        padding: 4px;
+      }
       img {
         display: block;
         width: 100%;
         height: auto;
         border-radius: 50%;
+      }
+      p {
+        @media @mobile {
+          font-size: 20px;
+          margin-bottom: 4px;
+        }
       }
     }
   }

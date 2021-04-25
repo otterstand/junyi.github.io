@@ -67,6 +67,12 @@ body {
   display: flex;
   align-items: center;
 }
+@media only screen and (max-width: 767px) {
+  #avatar .align {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 #avatar .align .avatar {
   width: 76px;
   margin-right: 24px;
@@ -74,11 +80,25 @@ body {
   background: linear-gradient(264deg, #32c5ff 0%, #b620e0 50%, #f7b500 100%);
   padding: 2px;
 }
+@media only screen and (max-width: 767px) {
+  #avatar .align .avatar {
+    margin-right: 0;
+    margin-bottom: 16px;
+    width: 120px;
+    padding: 4px;
+  }
+}
 #avatar .align .avatar img {
   display: block;
   width: 100%;
   height: auto;
   border-radius: 50%;
+}
+@media only screen and (max-width: 767px) {
+  #avatar .align .avatar p {
+    font-size: 20px;
+    margin-bottom: 4px;
+  }
 }
 #hero {
   margin-bottom: 160px;
