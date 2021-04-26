@@ -175,19 +175,22 @@ body {
   background: linear-gradient(264deg, #32c5ff 0%, #b620e0 50%, #f7b500 100%);
 }
 #sayhello a ul {
+  margin: 0;
   padding-left: 0;
   display: flex;
   list-style-type: none;
-  animation: hello 16s linear infinite;
+  animation: hello 18s linear infinite;
   position: absolute;
 }
 #sayhello a ul li {
+  width: 300px;
   margin: 0 8px;
   white-space: nowrap;
   color: #fff;
   font-size: 46px;
   font-weight: 600;
   line-height: 46px;
+  text-align: center;
   letter-spacing: -2px;
   text-transform: uppercase;
 }
@@ -196,11 +199,9 @@ body {
 }
 @keyframes hello {
   0% {
-    left: 100%;
-    transform: translateX(0%);
+    transform: translate3d(0, 0, 0);
   }
   100% {
-    left: 0;
-    transform: translateX(-100%);
+    transform: translate3d(-1920px, 0, 0);
   }
 }
